@@ -47,7 +47,7 @@ namespace MVCApplication.Controllers
             movieEntity.MovieID = movieId.ToString();
             await dynamoOps.SaveNewMovie(movieEntity);
 
-            return View("Signin");
+            return Redirect("/Signin");
         }
        
     }

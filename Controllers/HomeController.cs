@@ -40,13 +40,18 @@ namespace MVCApplication.Controllers
             return View();
         }
         [HttpGet("/signin")]
-        public IActionResult Home()
+        public async Task<IActionResult> Home()
         {
             string username = HttpContext.Session.GetString("username");
 
             if (username != null || username != "")
             {
-                return View("LoginSuccess");
+                var viewModel = new MovieHomeViewModel
+                {
+                    Movies = await dynamoOps.GetMoviesByGenreAsync(),
+                };
+
+                return View("LoginSuccess", viewModel);
             }
             else
             {
@@ -128,12 +133,14 @@ namespace MVCApplication.Controllers
             return View("Signin");
         }
 
-
+       
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
     }
 }
