@@ -2,6 +2,7 @@
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using MVCApplication.Models;
+using MVCApplication.Services;
 using System.Diagnostics;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
@@ -9,9 +10,12 @@ namespace MVCApplication.Controllers
 {
     public class HomeController : Controller
     {
+
+        DynamoOps dynamoOps = new DynamoOps();
+
         private readonly ILogger<HomeController> _logger;
         private readonly WebApplicationBuilder _webApplicationBuilder;
-       
+        
 
         public HomeController(ILogger<HomeController> logger)
         {
@@ -67,7 +71,15 @@ namespace MVCApplication.Controllers
                     // Store username and password in session
                     HttpContext.Session.SetString("username", email);
                     HttpContext.Session.SetString("password", password);
-                    return View("LoginSuccess");
+
+
+                    var viewModel = new MovieHomeViewModel
+                    {
+                        Movies = await dynamoOps.GetMoviesByGenreAsync(),
+                    };
+
+                    return View("LoginSuccess", viewModel);
+
                 }
                 else
                 {
@@ -108,6 +120,14 @@ namespace MVCApplication.Controllers
             }
             
         }
+        [HttpGet("/logout")]
+        public IActionResult LogOut()
+        {
+            HttpContext.Session.Remove("username");
+            HttpContext.Session.Remove("password");
+            return View("Signin");
+        }
+
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

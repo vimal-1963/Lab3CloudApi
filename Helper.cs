@@ -21,7 +21,7 @@ namespace MVCApplication
             dynamoDBClient = GetDynamoDBClient();
         }
 
-        private static IAmazonS3 GetS3Client()
+        public static IAmazonS3 GetS3Client()
         {
             string accessKey = ConfigurationManager.AppSettings["accessid"];
             string awsSecretKey = ConfigurationManager.AppSettings["password"];

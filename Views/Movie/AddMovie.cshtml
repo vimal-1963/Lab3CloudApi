@@ -10,15 +10,15 @@
 <div class="text-center login-container bg-dark-cus bg-gradient text-light">
     <h4 class="display-6">Add New Movie</h4>
     <hr />
-    <form action="addNew" method="post">
+    <form action="addNew" method="post" enctype="multipart/form-data">
         <div class="form-group">
-            <input name="movieName" type="text" class="form-control"  placeholder="Enter Movie Name">
+            <input name="Title" type="text" class="form-control" placeholder="Enter Movie Name">
         </div>
         <div class="form-group">
             <input name="directorName" type="text" class="form-control"  placeholder="Enter Director names">
         </div>
         <div class="form-group">
-            <select class="form-control">
+            <select class="form-control" name="Genre">
                 <option>Select a Movie Genre</option>
                 <option>Sci-Fi</option>
                 <option>Action</option>
@@ -30,9 +30,16 @@
             <input name="releaseDate" type="date" class="form-control" placeholder="Enter Director names">
         </div>
         <div class="form-group">
-            <input name="rating" type="number" class="form-control" placeholder="Enter Rating out of 5" min="0" max="5">
+            <input name="Rating" type="number" class="form-control" placeholder="Enter Rating out of 5" min="0" max="5">
         </div>
-
+        <div class="form-group">
+            <label for="imageUpload">Upload a Thumnail Image:</label>
+            <input class="form-control" type="file" id="imageUpload" name="Image" accept="image/*" />
+        </div>
+        <div class="form-group">
+            <label for="videoUpload">Upload a Movie Video:</label>
+            <input class="form-control" type="file" id="videoUpload" name="Video" accept="video/*" />
+        </div>
         <button type="submit" class="btn btn-primary">Add</button>
     </form>
 </div>

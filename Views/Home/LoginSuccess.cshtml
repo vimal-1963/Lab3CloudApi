@@ -3,6 +3,8 @@
 *@
 @{
 }
+@model MVCApplication.Models.MovieHomeViewModel
+
 <div class="home-bg-overlay">
 </div>
 <div class="movie-home-conatiner">
@@ -70,40 +72,20 @@
     <div class="movie-content">
         <p class="heading">Sci-Fi</p>
         <div class="movie-item-container">
-            <div class="movie-item">
-                <div class="movie-img">
-                    <img src="assets/mov1.jpg" />
+            @foreach (var movie in Model.Movies)
+            {
+                <div class="movie-item">
+                    <div class="movie-img">
+                        <img src="@movie.MovieImageUrl" />
+                    </div>
+                    <div class="movie-card-detail">
+                        <p>@movie.Rating</p>
+                            <i class="bi bi-star-fill"></i>
+                        
+                        <p>@movie.Title</p>
+                    </div>
                 </div>
-                <div class="movie-card-detail">
-                    <i class="bi bi-star-fill"></i>
-                    <p>Movie Name</p>
-                </div>
-            </div>
-            <div class="movie-item">
-                <div class="movie-img">
-                    <img src="assets/mov1.jpg" />
-                </div>
-                <div class="movie-card-detail">
-                    <p>Movie Name</p>
-                </div>
-            </div>
-            <div class="movie-item">
-                <div class="movie-img">
-                    <img src="assets/mov1.jpg" />
-                </div>
-                <div class="movie-card-detail">
-                    <p>Movie Name</p>
-                </div>
-            </div>
-            <div class="movie-item">
-                <div class="movie-img">
-                    <img src="assets/mov1.jpg" />
-                </div>
-                <div class="movie-card-detail">
-                    <i class="bi bi-star-fill"></i>
-                    <p>Movie Name</p>
-                </div>
-            </div>
+            }
         </div>
 
 
