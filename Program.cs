@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Data;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
+ 
 var builder = WebApplication.CreateBuilder(args);
 BuilderContainer.builder = builder;
 
@@ -31,6 +32,8 @@ catch (Exception ex)
 {
     Console.WriteLine($"Error connecting to database:{ex.Message}");
 }
+
+
 
 /*
  async Task checkTable(WebApplicationBuilder builder)
@@ -73,6 +76,11 @@ catch (Exception ex)
     }
 
 }*/
+builder.Services.AddDistributedMemoryCache(); // Use an in-memory cache for session data
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(20); // Set the session timeout
+});
 
 var app = builder.Build();
 
@@ -91,9 +99,12 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+app.UseSession();
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
 
 
 app.Run();

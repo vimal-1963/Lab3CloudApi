@@ -14,12 +14,20 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
-}
-footer{
-    background-color:white;
+    margin-bottom: 60px;
 }
 
+
+p{
+    margin:0;
+    padding:0;
+}
+body >.container{
+    margin-bottom:5%;
+}
+.bg-dark-cus-cus {
+    background-color: #000000 !important;
+}
 .login-container {
     display: flex;
     flex-direction: column;
@@ -31,7 +39,7 @@ footer{
     background-color:white;
     opacity:0.95;
 }
-.signin-bg {
+.signin-bg, .home-bg-overlay, .add-movie-bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -40,25 +48,70 @@ footer{
     width: 100vw;
     height: 100vh;
 }
-
+.home-bg-overlay {
+   background-color:black;
+}
+.add-movie-bg > img{
+    width:100%
+}
 .movie-home-conatiner {
     margin: 0 auto;
+    color: white;
 }
 .movie-content{
     display:flex;
+    flex-direction:column;
     gap:2%;
+    margin-bottom:3%;
+}
+    .movie-content > p {
+        font-size: 28px;
+        background-image: url(../assets/title_bg.jpg);
+        background-position: bottom;
+        width: fit-content;
+        padding: 0 15%;
+        font-weight: 600;
+        border-radius: 47px 0 47px 0;
+        color: black;
+    }
+.movie-item-container {
+    display: flex;
+    gap: 1.5%;
+    flex-wrap: wrap;
 }
 .movie-item {
-    background-color: aquamarine;
-    padding: 0.5%;
-    border-radius: 10px;
+    background-color: black;
+    padding: 0.2%;
+    width: 205px;
+    box-shadow: 2px 2px 10px #616161;
+    margin-bottom: 2%
 }
 
 .movie-img{
-    width:30%;
+    width:100%;
     }
-    .movie-img > img {
+.movie-img > img {
         width: 100%;
-        border-radius: 10px;
-        aspect-ratio:4/3;
-    }
+        aspect-ratio:3/4;
+}
+.home_heading {
+    background-image: url("../assets/home_head.jpg");
+    background-position: bottom;
+    filter: grayscale(1);
+    margin-bottom:3%;
+    padding:2%;
+}
+
+.add-new {
+    position: fixed;
+    bottom: 9%;
+    right: 3%;
+    padding: 1%;
+    font-weight: bold;
+    border-radius: 25px;
+    outline: none;
+    background-color:white
+}
+.movie-content > heading{
+    padding:3%
+}

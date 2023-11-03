@@ -5,8 +5,24 @@
       "PackagePath": "staticwebassets\\MVCApplication.bundle.scp.css"
     },
     {
+      "Id": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\assets\\add_bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\add_bg.jpg"
+    },
+    {
+      "Id": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\assets\\home_head.jpg",
+      "PackagePath": "staticwebassets\\assets\\home_head.jpg"
+    },
+    {
+      "Id": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\assets\\mov1.jpg",
+      "PackagePath": "staticwebassets\\assets\\mov1.jpg"
+    },
+    {
       "Id": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\assets\\signinbg.jpg",
       "PackagePath": "staticwebassets\\assets\\signinbg.jpg"
+    },
+    {
+      "Id": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\assets\\title_bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\title_bg.jpg"
     },
     {
       "Id": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\css\\site.css",

@@ -35,6 +35,20 @@ namespace MVCApplication.Controllers
         {
             return View();
         }
+        [HttpGet("/signin")]
+        public IActionResult Home()
+        {
+            string username = HttpContext.Session.GetString("username");
+
+            if (username != null || username != "")
+            {
+                return View("LoginSuccess");
+            }
+            else
+            {
+                return Redirect("/");
+            }
+        }
 
         [HttpPost("/signin")]
         public async Task<IActionResult> Signin(IFormCollection form )
@@ -47,23 +61,23 @@ namespace MVCApplication.Controllers
             string pwdFunc = await new DbOperations(builder).Login(email);
             if(pwdFunc != null)
             {
-                if(password.Equals(pwdFunc))
+                
+                if (password.Equals(pwdFunc))
                 {
+                    // Store username and password in session
+                    HttpContext.Session.SetString("username", email);
+                    HttpContext.Session.SetString("password", password);
                     return View("LoginSuccess");
-                    //return Ok($"form email {email} password {password} Login Successfull");
                 }
                 else
                 {
                     return Redirect("/");
-                    //return Ok("Login failed");
                 }
             }
             else
             {
                 return Redirect("/");
-                //return Ok("Login failed");
             }
-            
             
         }
 
