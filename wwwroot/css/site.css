@@ -16,7 +16,10 @@ html {
 body {
     margin-bottom: 60px;
 }
-
+a{
+    text-decoration:none;
+    color:white !important;
+}
 
 p{
     margin:0;
@@ -116,4 +119,45 @@ body >.container{
 }
 .movie-content > heading{
     padding:3%
+}
+.rating_dwnld_img {
+    width: 35px;
+}
+.rating_div {
+    position: relative;
+    width:fit-content;
+}
+.rating_value {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.rate_icon_div{
+    display:flex;
+    justify-content:space-between;
+    margin:4%;
+}
+.movie_edit_btn {
+    color: white;
+    width: 96%;
+    background-color: black;
+    outline: none;
+    border-radius: 7px;
+    margin: 2%;
+    border: 1.5px solid red;
+}
+.edit_movie_container{
+    display:flex;
+    gap:3%;
+}
+.edit_img{
+    width:30%;
+}
+.edit_img > img {
+    border: solid 2px red;
+}
+.edit_detail{
+    width:70%;
 }

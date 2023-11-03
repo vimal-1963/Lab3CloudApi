@@ -48,7 +48,11 @@ namespace MVCApplication.Controllers
             {
                 var viewModel = new MovieHomeViewModel
                 {
-                    Movies = await dynamoOps.GetMoviesByGenreAsync(),
+                    //TopRatedMovies = await dynamoOps.GetMoviesByGenreAsync(),
+                    SciFiMovies = await dynamoOps.GetMoviesByGenreAsync("Sci-Fi"),
+                    ActionMovies = await dynamoOps.GetMoviesByGenreAsync("Action"),
+                    ComedyMovies = await dynamoOps.GetMoviesByGenreAsync("Comedy"),
+                    HorrorMovies = await dynamoOps.GetMoviesByGenreAsync("Horror"),
                 };
 
                 return View("LoginSuccess", viewModel);
@@ -80,7 +84,11 @@ namespace MVCApplication.Controllers
 
                     var viewModel = new MovieHomeViewModel
                     {
-                        Movies = await dynamoOps.GetMoviesByGenreAsync(),
+                        //TopRatedMovies = await dynamoOps.GetMoviesByGenreAsync(),
+                        SciFiMovies = await dynamoOps.GetMoviesByGenreAsync("Sci-Fi"),
+                        ActionMovies = await dynamoOps.GetMoviesByGenreAsync("Action"),
+                        ComedyMovies = await dynamoOps.GetMoviesByGenreAsync("Comedy"),
+                        HorrorMovies = await dynamoOps.GetMoviesByGenreAsync("Horror"),
                     };
 
                     return View("LoginSuccess", viewModel);

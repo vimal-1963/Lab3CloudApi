@@ -49,6 +49,15 @@ namespace MVCApplication.Controllers
 
             return Redirect("/Signin");
         }
-       
+
+      
+        [HttpPost]
+        public IActionResult EditMovie(Movie movie)
+        {
+            // Use the 'movie' object in your controller action
+            // You can perform any necessary processing here
+            return View("EditMovie", movie);
+        }
+
     }
 }

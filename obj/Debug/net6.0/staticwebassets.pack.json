@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\assets\\add_bg.jpg"
     },
     {
+      "Id": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\assets\\download-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\download-solid.svg"
+    },
+    {
       "Id": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\assets\\home_head.jpg",
       "PackagePath": "staticwebassets\\assets\\home_head.jpg"
     },
@@ -19,6 +23,10 @@
     {
       "Id": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\assets\\signinbg.jpg",
       "PackagePath": "staticwebassets\\assets\\signinbg.jpg"
+    },
+    {
+      "Id": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\assets\\star-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\star-solid.svg"
     },
     {
       "Id": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\assets\\title_bg.jpg",

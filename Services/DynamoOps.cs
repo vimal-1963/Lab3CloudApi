@@ -12,10 +12,9 @@ namespace MVCApplication.Services
        
            AmazonDynamoDBClient client = Helper.dynamoDBClient;
 
-        public async Task<List<Movie>> GetMoviesByGenreAsync()
+        public async Task<List<Movie>> GetMoviesByGenreAsync(string genre)
         {
             var context = new DynamoDBContext(client);
-            string genre = "Comedy";
             var queryRequest = new QueryRequest
             {
                 TableName = "Movies", // Your DynamoDB table name
