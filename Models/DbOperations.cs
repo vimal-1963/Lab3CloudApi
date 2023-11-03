@@ -1,4 +1,5 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using Azure;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using MVCApplication.Controllers;
 using System.Data;
@@ -59,12 +60,16 @@ namespace MVCApplication.Models
 
         //Db operation for login function
 
-        public async Task<string> Login(string email)
+        public async Task<UserInfo> Login(string email)
         {
-
+            int Id ;
+            string FirstName = "";
+            string LastName = "";
+            string Email = "";
             string password = "";
-            string loginQuery = $"SELECT Pwd FROM UserInfo WHERE UserInfo.Email = @Email";
-
+            //string loginQuery = $"SELECT Pwd FROM UserInfo WHERE UserInfo.Email = @Email";
+            string loginQuery = $"SELECT * FROM UserInfo WHERE UserInfo.Email = @Email";
+            UserInfo user = new UserInfo();
             using (var connection = new SqlConnection(_applicationBuilder.Configuration.GetConnectionString("DefaultConnection")))
             {
                 await connection.OpenAsync();
@@ -79,8 +84,21 @@ namespace MVCApplication.Models
                         while (await reader.ReadAsync())
                         {
                             // Access the columns in the current row using reader.GetXxx methods.
+                            Id = reader.GetInt32(reader.GetOrdinal("Id"));
+                            FirstName = reader.GetString(reader.GetOrdinal("FirstName"));
+                            LastName = reader.GetString(reader.GetOrdinal("LastName"));
+                            Email = reader.GetString(reader.GetOrdinal("Email"));
+                            
                             password = reader.GetString(reader.GetOrdinal("Pwd"));
 
+                            user.Id = Id;
+                            user.FirstName = FirstName; 
+                            user.LastName = LastName;   
+                            user.Email = Email;
+                            user.Pwd = password;
+
+                            //UserInfo user = new UserInfo(Id,FirstName,LastName,Email,password);
+                            //Console.WriteLine($"{Id},{password}, {FirstName},{LastName},{Email}");
                             // Process the data for each row.
                             // You can add it to a list or perform any other action as needed.
                         }
@@ -90,7 +108,7 @@ namespace MVCApplication.Models
                 await connection.CloseAsync();
 
             }
-            return password;
+            return user;
             Console.WriteLine("inside login function");
         }
 

@@ -67,11 +67,11 @@ namespace MVCApplication.Controllers
 
             var builder = BuilderContainer.builder;
 
-            string pwdFunc = await new DbOperations(builder).Login(email);
-            if(pwdFunc != null)
+            UserInfo user = await new DbOperations(builder).Login(email);
+            if(user.Pwd!= null)
             {
                 
-                if (password.Equals(pwdFunc))
+                if (password.Equals(user.Pwd))
                 {
                     // Store username and password in session
                     HttpContext.Session.SetString("username", email);
@@ -82,6 +82,11 @@ namespace MVCApplication.Controllers
                     {
                         Movies = await dynamoOps.GetMoviesByGenreAsync(),
                     };
+
+                    Response.Cookies.Append("userId",user.Id.ToString());
+                    Response.Cookies.Append("userEmail", user.Email!);
+
+
 
                     return View("LoginSuccess", viewModel);
 
@@ -128,8 +133,8 @@ namespace MVCApplication.Controllers
         [HttpGet("/logout")]
         public IActionResult LogOut()
         {
-            HttpContext.Session.Remove("username");
-            HttpContext.Session.Remove("password");
+            Response.Cookies.Delete("userId");
+            Response.Cookies.Delete("userEmail");
             return View("Signin");
         }
 
