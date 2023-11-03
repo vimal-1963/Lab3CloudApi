@@ -10,7 +10,7 @@ namespace MVCApplication.Services
     public class DynamoOps
     {
        
-           AmazonDynamoDBClient client = Helper.dynamoDBClient;
+         AmazonDynamoDBClient client = Helper.dynamoDBClient;
 
         public async Task<List<Movie>> GetMoviesByGenreAsync(string genre)
         {

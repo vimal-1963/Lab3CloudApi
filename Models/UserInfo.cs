@@ -14,4 +14,15 @@ public partial class UserInfo
     public string? Email { get; set; }
 
     public string? Pwd { get; set; }
+
+    public UserInfo() { }
+
+    public UserInfo(int IdArg, string FirstNameArg, string LastNameArg, string EmailArg, string pwdArg) {
+        this.Id = IdArg;
+        this.FirstName = FirstNameArg;  
+        this.LastName = LastNameArg;    
+        this.Email = EmailArg;  
+        this.Pwd = pwdArg;  
+    
+    }
 }
