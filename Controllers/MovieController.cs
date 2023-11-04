@@ -62,9 +62,23 @@ namespace MVCApplication.Controllers
         [HttpPost]
         public IActionResult EditMovie(Movie movie)
         {
+            var userIdCookie = Request.Cookies["userId"];
+            ViewData["UserIdCookie"] = userIdCookie;
+            ViewData["loginuser"] = movie.UploadedUserId;
             // Use the 'movie' object in your controller action
             // You can perform any necessary processing here
             return View("EditMovie", movie);
+        }
+
+        [HttpPost]
+        public IActionResult DeleteMovie(Movie movie)
+        {
+            // Use the 'movie' object in your controller action
+            // You can perform any necessary processing here
+
+
+
+            return Redirect("/Signin");
         }
 
     }

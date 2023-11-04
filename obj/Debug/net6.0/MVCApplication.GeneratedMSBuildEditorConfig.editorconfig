@@ -9,57 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MVCApplication
 build_property.RootNamespace = MVCApplication
-build_property.ProjectDir = E:\Centennial Software Engineering Technology\Semester 3\cloud computing\Lab3CloudApi\
+build_property.ProjectDir = E:\Lab3CloudApi\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\Centennial Software Engineering Technology\Semester 3\cloud computing\Lab3CloudApi
+build_property.MSBuildProjectDirectory = E:\Lab3CloudApi
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/Centennial Software Engineering Technology/Semester 3/cloud computing/Lab3CloudApi/Views/Home/Index.cshtml]
+[E:/Lab3CloudApi/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Centennial Software Engineering Technology/Semester 3/cloud computing/Lab3CloudApi/Views/Home/LoginSuccess.cshtml]
+[E:/Lab3CloudApi/Views/Home/LoginSuccess.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpblN1Y2Nlc3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Centennial Software Engineering Technology/Semester 3/cloud computing/Lab3CloudApi/Views/Home/Privacy.cshtml]
+[E:/Lab3CloudApi/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Centennial Software Engineering Technology/Semester 3/cloud computing/Lab3CloudApi/Views/Home/Signin.cshtml]
+[E:/Lab3CloudApi/Views/Home/Signin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWduaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Centennial Software Engineering Technology/Semester 3/cloud computing/Lab3CloudApi/Views/Home/Signup.cshtml]
+[E:/Lab3CloudApi/Views/Home/Signup.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWdudXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Centennial Software Engineering Technology/Semester 3/cloud computing/Lab3CloudApi/Views/Movie/AddMovie.cshtml]
+[E:/Lab3CloudApi/Views/Movie/AddMovie.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcQWRkTW92aWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Centennial Software Engineering Technology/Semester 3/cloud computing/Lab3CloudApi/Views/Movie/EditMovie.cshtml]
+[E:/Lab3CloudApi/Views/Movie/EditMovie.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcRWRpdE1vdmllLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Centennial Software Engineering Technology/Semester 3/cloud computing/Lab3CloudApi/Views/Shared/Error.cshtml]
+[E:/Lab3CloudApi/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Centennial Software Engineering Technology/Semester 3/cloud computing/Lab3CloudApi/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/Lab3CloudApi/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Centennial Software Engineering Technology/Semester 3/cloud computing/Lab3CloudApi/Views/_ViewImports.cshtml]
+[E:/Lab3CloudApi/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Centennial Software Engineering Technology/Semester 3/cloud computing/Lab3CloudApi/Views/_ViewStart.cshtml]
+[E:/Lab3CloudApi/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Centennial Software Engineering Technology/Semester 3/cloud computing/Lab3CloudApi/Views/Shared/_Layout.cshtml]
+[E:/Lab3CloudApi/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-8526erygnr
