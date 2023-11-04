@@ -12,6 +12,28 @@ namespace MVCApplication.Services
        
          AmazonDynamoDBClient client = Helper.dynamoDBClient;
 
+
+        internal async Task<bool> deleteMovie(string movieIdArg)
+        {
+            var context = new DynamoDBContext(client);
+            var primaryKey = new Movie
+            {
+                MovieID = movieIdArg,
+            };
+            try
+            {
+                await context.DeleteAsync(primaryKey);
+                return true;    
+            }
+            catch(Exception ex)
+            {
+                return false;
+            }
+            
+
+            
+        }
+
         public async Task<List<Movie>> GetMoviesByGenreAsync(string genre)
         {
             var context = new DynamoDBContext(client);

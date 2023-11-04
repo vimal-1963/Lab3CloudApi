@@ -71,13 +71,22 @@ namespace MVCApplication.Controllers
         }
 
         [HttpPost]
-        public IActionResult DeleteMovie(Movie movie)
+        public async Task<IActionResult> DeleteMovie(Movie movie)
         {
+            bool dynamoDeleteStatus;
+            bool s3ObjectStatus;
             // Use the 'movie' object in your controller action
             // You can perform any necessary processing here
-
-
-
+            Console.WriteLine(movie.MovieID);
+            Console.WriteLine(movie.MovieImageUrl);
+            try
+            {
+                dynamoDeleteStatus = await dynamoOps.deleteMovie(movie.MovieID.ToString()); 
+                s3ObjectStatus = await s3Ops.deleteImageURL(movie.MovieImageUrl.ToString());
+            }catch(Exception ex) {
+                Console.WriteLine(ex.Message);
+            }
+            
             return Redirect("/Signin");
         }
 
