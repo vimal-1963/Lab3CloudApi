@@ -55,33 +55,11 @@ namespace MVCApplication.Services
             return 0;
         }
 
-        internal async Task<bool> DeleteTableItems(string partitionKeyArg)
-        {
-            var context = new DynamoDBContext(client);
-
-            var primaryKey = new Movie
-            {
-                MovieID = partitionKeyArg,                 
-            };
-            try
-            {
-                await context.DeleteAsync<Movie>(primaryKey);
-                return true;
-            }catch (Exception ex) { 
-                Console.WriteLine(ex.ToString());   
-                return false;
-            }
-            
-            
-        }
-
         internal async Task SaveNewMovie(Movie movieEntity)
         {
             var context = new DynamoDBContext(client);
             // Save the data to DynamoDB
             await context.SaveAsync(movieEntity);
         }
-
-
     }
 }
