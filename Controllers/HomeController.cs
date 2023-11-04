@@ -42,9 +42,8 @@ namespace MVCApplication.Controllers
         [HttpGet("/signin")]
         public async Task<IActionResult> Home()
         {
-            string username = HttpContext.Session.GetString("username");
-
-            if (username != null || username != "")
+            var userId = HttpContext.Request.Cookies["userId"];
+            if (!string.IsNullOrEmpty(userId))
             {
                 var viewModel = new MovieHomeViewModel
                 {
@@ -61,6 +60,7 @@ namespace MVCApplication.Controllers
             {
                 return Redirect("/");
             }
+
         }
 
         [HttpPost("/signin")]

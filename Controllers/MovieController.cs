@@ -41,7 +41,15 @@ namespace MVCApplication.Controllers
             movieEntity.Rating = movie.Rating;
             movieEntity.Directors = directors;
             movieEntity.Comments = comments;
-            movieEntity.UploadedUserId = "dfe";
+            var userId = HttpContext.Request.Cookies["userId"];
+            if (!string.IsNullOrEmpty(userId))
+            {
+                movieEntity.UploadedUserId = userId;
+            }
+            else
+            {
+                // Handle the case when the cookie is not found or has no value
+            }
 
             int movieId = await dynamoOps.GetSequence();
             movieEntity.MovieID = movieId.ToString();
