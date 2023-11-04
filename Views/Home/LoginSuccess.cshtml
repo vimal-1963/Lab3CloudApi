@@ -31,9 +31,20 @@
                             </a>
                         </div>
                         <p>@movie.Title</p>
-                        <button class="movie_edit_btn">
-                            <a href="@Url.Action("EditMovie", "MovieController", new { movie = movie })">Edit</a>
-                        </button>
+                        @using (Html.BeginForm("EditMovie", "Movie", FormMethod.Post))
+                        {
+                            @Html.HiddenFor(model => movie.MovieID)
+                            @Html.HiddenFor(model => movie.Title)
+                            @Html.HiddenFor(model => movie.Genre)
+                            @Html.HiddenFor(model => movie.Rating)
+                            @Html.HiddenFor(model => movie.MovieImageUrl)
+                            @Html.HiddenFor(model => movie.URL)
+                            @Html.HiddenFor(model => movie.UploadedUserId)
+                            @Html.HiddenFor(model => movie.URL)
+                            @Html.HiddenFor(model => movie.UploadedUserId)
+                            // This includes all the model properties as hidden fields
+                            <button class="movie_edit_btn" type="submit">Edit</button>
+                        }
                     </div>
                 </div>
             }
@@ -50,7 +61,7 @@
                     </div>
                     <div class="movie-card-detail">
                         <div class="rate_icon_div">
-                            <div class="rating_div"><button class="movie_edit_btn">Edit</button>
+                            <div class="rating_div">
                                 <img class="rating_dwnld_img" src="~/assets/star-solid.svg" />
                                 <p class="rating_value">@movie.Rating</p>
                             </div>
@@ -59,9 +70,20 @@
                             </a>
                         </div>
                         <p>@movie.Title</p>
-                        <button class="movie_edit_btn">
-                            <a href="@Url.Action("EditMovie", "MovieController", new { movie = movie })">Edit</a>
-                        </button>
+                        @using (Html.BeginForm("EditMovie", "Movie", FormMethod.Post))
+                        {
+                            @Html.HiddenFor(model => movie.MovieID)
+                            @Html.HiddenFor(model => movie.Title)
+                            @Html.HiddenFor(model => movie.Genre)
+                            @Html.HiddenFor(model => movie.Rating)
+                            @Html.HiddenFor(model => movie.MovieImageUrl)
+                            @Html.HiddenFor(model => movie.URL)
+                            @Html.HiddenFor(model => movie.UploadedUserId)
+                            @Html.HiddenFor(model => movie.URL)
+                            @Html.HiddenFor(model => movie.UploadedUserId)
+                            // This includes all the model properties as hidden fields
+                            <button class="movie_edit_btn" type="submit">Edit</button>
+                        }
 
                     </div>
                 </div>
@@ -88,9 +110,20 @@
                             </a>
                         </div>
                         <p>@movie.Title</p>
-                        <button class="movie_edit_btn">
-                            <a href="@Url.Action("EditMovie", "MovieController", new { movie = movie })">Edit</a>
-                        </button>
+                        @using (Html.BeginForm("EditMovie", "Movie", FormMethod.Post))
+                        {
+                            @Html.HiddenFor(model => movie.MovieID)
+                            @Html.HiddenFor(model => movie.Title)
+                            @Html.HiddenFor(model => movie.Genre)
+                            @Html.HiddenFor(model => movie.Rating)
+                            @Html.HiddenFor(model => movie.MovieImageUrl)
+                            @Html.HiddenFor(model => movie.URL)
+                            @Html.HiddenFor(model => movie.UploadedUserId)
+                            @Html.HiddenFor(model => movie.URL)
+                            @Html.HiddenFor(model => movie.UploadedUserId)
+                            // This includes all the model properties as hidden fields
+                            <button class="movie_edit_btn" type="submit">Edit</button>
+                        }
 
                     </div>
                 </div>
@@ -124,6 +157,10 @@
                             @Html.HiddenFor(model => movie.Genre)
                             @Html.HiddenFor(model => movie.Rating)
                             @Html.HiddenFor(model => movie.MovieImageUrl)
+                            @Html.HiddenFor(model => movie.URL)
+                            @Html.HiddenFor(model => movie.UploadedUserId)
+                            @Html.HiddenFor(model => movie.URL)
+                            @Html.HiddenFor(model => movie.UploadedUserId)
                             // This includes all the model properties as hidden fields
                             <button class="movie_edit_btn" type="submit">Edit</button>
                         }
@@ -135,4 +172,4 @@
     </div>
     
 </div>
-<a class="add-new" href="/addMovie">Add New Movie</a>
+<a class="add-new text-dark" href="/addMovie">Add New Movie</a>
