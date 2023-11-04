@@ -30,8 +30,6 @@ namespace MVCApplication.Services
                 return false;
             }
             
-
-            
         }
 
         public async Task<List<Movie>> GetMoviesByGenreAsync(string genre)
@@ -83,5 +81,33 @@ namespace MVCApplication.Services
             // Save the data to DynamoDB
             await context.SaveAsync(movieEntity);
         }
+
+       
+        //function to list all comments
+        internal async Task<List<Comment>> listAllComments(string movieIdArg)
+        {
+            List<Comment> commentList = new List<Comment>();
+            var context = new DynamoDBContext(client);
+            var movie =await context.LoadAsync<Movie>(movieIdArg);
+            if (movie != null)
+            {
+                Console.WriteLine($"Movie ID: {movie.MovieID}");
+                Console.WriteLine($"Movie Title: {movie.Title}");
+                Console.WriteLine("Comments:");
+
+                foreach (var comment in movie.Comments)
+                {
+                    commentList.Add(new Comment(comment.Comment, comment.CommentedUser, comment.CommentTime));
+                }
+            }
+            else
+            {
+                Console.WriteLine("Movie not found.");
+            }
+            return commentList;
+
+
+        }
+
     }
 }

@@ -60,11 +60,13 @@ namespace MVCApplication.Controllers
 
       
         [HttpPost]
-        public IActionResult EditMovie(Movie movie)
+        public async Task<IActionResult> EditMovie(Movie movie)
         {
             var userIdCookie = Request.Cookies["userId"];
             ViewData["UserIdCookie"] = userIdCookie;
             ViewData["loginuser"] = movie.UploadedUserId;
+
+
             // Use the 'movie' object in your controller action
             // You can perform any necessary processing here
             return View("EditMovie", movie);
@@ -90,5 +92,21 @@ namespace MVCApplication.Controllers
             return Redirect("/Signin");
         }
 
+
+
     }
 }
+
+
+// Dummy code to check all the comments
+/*
+List<Comment> commentListArg = new List<Comment>();
+commentListArg = await dynamoOps.listAllComments(movie.MovieID.ToString());
+foreach (Comment comment in commentListArg)
+{
+    Console.WriteLine(comment.CommentTime);
+    Console.WriteLine(comment.CommentTitle);
+    Console.WriteLine(comment.CommentedUser);
+
+}
+*/
