@@ -45,11 +45,11 @@
             @using (Html.BeginForm("DeleteMovie", "Movie", FormMethod.Post))
             {
                 @Html.HiddenFor(model => Model.MovieID)
-
+                @Html.HiddenFor(model => Model.MovieImageUrl);
                 @Html.HiddenFor(model => Model.UploadedUserId)
 
                 // This includes all the model properties as hidden fields
-                   <button class="movie_edit_btn"  type="submit">Edit</button>
+                   <button class="movie_edit_btn"  type="submit">Delete</button>
                        
 
             }
