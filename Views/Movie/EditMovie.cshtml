@@ -35,7 +35,26 @@
             <div class="form-group">
                 <input name="Comment" type="text" class="form-control" placeholder="Enter Comment">
             </div>
+           
             <button type="submit" class="btn btn-primary">Update</button>
         </form>
+
+        @if ((string)ViewData["UserIdCookie"] == (string)ViewData["loginuser"])
+        {
+               
+            @using (Html.BeginForm("DeleteMovie", "Movie", FormMethod.Post))
+            {
+                @Html.HiddenFor(model => Model.MovieID)
+                @Html.HiddenFor(model => Model.MovieImageUrl)
+                @Html.HiddenFor(model => Model.UploadedUserId)
+
+                // This includes all the model properties as hidden fields
+                   <button class="movie_edit_btn"  type="submit">Delete</button>
+                       
+
+            }
+            
+        }
+        
     </div>
 </div>

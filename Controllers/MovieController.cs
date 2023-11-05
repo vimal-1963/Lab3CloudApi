@@ -60,12 +60,53 @@ namespace MVCApplication.Controllers
 
       
         [HttpPost]
-        public IActionResult EditMovie(Movie movie)
+        public async Task<IActionResult> EditMovie(Movie movie)
         {
+            var userIdCookie = Request.Cookies["userId"];
+            ViewData["UserIdCookie"] = userIdCookie;
+            ViewData["loginuser"] = movie.UploadedUserId;
+
+
             // Use the 'movie' object in your controller action
             // You can perform any necessary processing here
             return View("EditMovie", movie);
         }
 
+        [HttpPost]
+        public async Task<IActionResult> DeleteMovie(Movie movie)
+        {
+            bool dynamoDeleteStatus;
+            bool s3ObjectStatus;
+            // Use the 'movie' object in your controller action
+            // You can perform any necessary processing here
+            Console.WriteLine(movie.MovieID);
+            Console.WriteLine(movie.MovieImageUrl);
+            try
+            {
+                dynamoDeleteStatus = await dynamoOps.deleteMovie(movie.MovieID.ToString()); 
+                s3ObjectStatus = await s3Ops.deleteImageURL(movie.MovieImageUrl.ToString());
+            }catch(Exception ex) {
+                Console.WriteLine(ex.Message);
+            }
+            
+            return Redirect("/Signin");
+        }
+
+
+
     }
 }
+
+
+// Dummy code to check all the comments
+/*
+List<Comment> commentListArg = new List<Comment>();
+commentListArg = await dynamoOps.listAllComments(movie.MovieID.ToString());
+foreach (Comment comment in commentListArg)
+{
+    Console.WriteLine(comment.CommentTime);
+    Console.WriteLine(comment.CommentTitle);
+    Console.WriteLine(comment.CommentedUser);
+
+}
+*/
