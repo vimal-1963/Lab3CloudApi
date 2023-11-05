@@ -10,34 +10,51 @@
         <img src="@Model.MovieImageUrl"/>
     </div>
     <div class="edit_detail">
-        <form action="update" method="post" >
-            <div class="form-group">
-                <input name="Title" type="text" class="form-control" value="@Model.Title" placeholder="Enter Movie Name">
-            </div>
-            <div class="form-group">
-                <input name="directorName" type="text" class="form-control" placeholder="Enter Director names">
-            </div>
-            <div class="form-group">
-                <select class="form-control" name="Genre">
-                    <option>Select a Movie Genre</option>
-                    <option>Sci-Fi</option>
-                    <option>Action</option>
-                    <option>Comedy</option>
-                    <option>Horror</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <input name="releaseDate" type="date" class="form-control"  placeholder="Enter Director names">
-            </div>
-            <div class="form-group">
-                <input name="Rating" type="number" class="form-control" value="@Model.Rating" placeholder="Enter Rating out of 10" min="0" max="10">
-            </div>
-            <div class="form-group">
-                <input name="Comment" type="text" class="form-control" placeholder="Enter Comment">
-            </div>
+        <div class="mov_field">
+            <label>Movie Name:</label>
+            <p>@Model.Title</p>
+        </div>
+        <div class="mov_field">
+            <label>Directors:</label>
+            @if (Model.Directors != null)
+            {
+                @foreach (var Director in Model.Directors)
+                {
+                    <p>@Director.ToString()</p>
+                }
+            }
+       
+        </div>
+        <div class="mov_field">
+            <label>Genre:</label>
+            <p>@Model.Genre</p>
+        </div>
+        <div class="mov_field">
+            <label>Rating:</label>
+            <p>@Model.Rating</p>
+        </div>
+        
+        <div class="mov_field">
+            <label>Comments:</label>
+            @if (Model.Comments != null)
+            {
+                <div>
+                    @foreach (var comment in Model.Comments)
+                    {
+                        @if (@comment.Comment != null)
+                        {
+                            <p>@comment.Comment.ToString()</p>
+
+                        }
+                    }
+                </div>
+            }
            
-            <button type="submit" class="btn btn-primary">Update</button>
-        </form>
+            
+        </div>
+
+        <button data-toggle="modal" data-target="#editModal" class="btn btn-primary edit_btn">Edit Details</button>
+
 
         @if ((string)ViewData["UserIdCookie"] == (string)ViewData["loginuser"])
         {
@@ -48,13 +65,103 @@
                 @Html.HiddenFor(model => Model.MovieImageUrl)
                 @Html.HiddenFor(model => Model.UploadedUserId)
 
+
                 // This includes all the model properties as hidden fields
                    <button class="movie_edit_btn"  type="submit">Delete</button>
-                       
-
             }
             
         }
         
     </div>
+
+    <div class="modal" id="editModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header text-light">
+                    <h5 class="modal-title">Edit details</h5>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body text-light">
+                    <form action="update" method="post">
+                       
+                        <div class="edit-form-group">
+                            <label>Movie Name:</label>
+                            <input name="Title" type="text" class="form-control" value="@Model.Title" placeholder="Enter Movie Name"
+                            @if ((string)ViewData["UserIdCookie"] != (string)ViewData["loginuser"])
+                            {
+                                <text>disabled style="background-color:grey !important"</text>
+                                 
+                            }>
+                        </div>
+                        <div class="edit-form-group">
+                            <label>Directors:</label>
+                            <input name="directorName" type="text" class="form-control" value="@if (Model.Directors != null)
+                                   {
+                                   @foreach (var Director in Model.Directors)
+                                   {
+                            @Director.ToString()
+                            }
+                            }" placeholder="Enter Director names" @if ((string)ViewData["UserIdCookie"] != (string)ViewData["loginuser"])
+                            {
+                                <text>disabled style="background-color:grey !important"</text>
+                            }>
+                        </div>
+                        <div class="edit-form-group">
+                            <label>Genre:</label>
+                            <select class="form-control" name="Genre" @if ((string)ViewData["UserIdCookie"] != (string)ViewData["loginuser"])
+                            {
+                                <text>disabled style="background-color:grey !important"</text>
+                            }>
+                                <option selected>@Model.Genre</option>
+                                <option>Sci-Fi</option>
+                                <option>Action</option>
+                                <option>Comedy</option>
+                                <option>Horror</option>
+                            </select>
+                        </div>
+                        <div class="edit-form-group">
+                            <label>Release Date:</label>
+                            <input name="releaseDate" type="date" class="form-control" placeholder="Enter Director names" @if ((string)ViewData["UserIdCookie"] != (string)ViewData["loginuser"])
+                            {
+                                <text>disabled style="background-color:grey !important"</text>
+                            }>
+                        </div>
+                        <div class="edit-form-group">
+                            <label>Rating:</label>
+                            <input name="Rating" type="number" class="form-control" value="@Model.Rating" placeholder="Enter Rating out of 10" min="0" max="10" @if ((string)ViewData["UserIdCookie"] != (string)ViewData["loginuser"])
+                            {
+                                <text>disabled style="background-color:grey !important"</text>
+                            }>
+                        </div>
+                        <div class="edit-form-group">
+                            <label>Comments:</label>
+                            <div class="comment_edit">
+
+                            @if (Model.Comments != null)
+                            {
+                                    @foreach (var comment in Model.Comments)
+                                    {
+                                        @if (@comment.Comment != null && @comment.CommentTime != null)
+                                        {
+                                                <input name="Comment" type="text" class="form-control" value="@comment.Comment.ToString()" placeholder="Enter Comment">
+                                        }
+                                    }
+                            }
+                            <input name="Comment" type="text" class="form-control" placeholder="Enter Comment">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </form>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
 </div>

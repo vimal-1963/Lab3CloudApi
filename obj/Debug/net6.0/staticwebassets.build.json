@@ -1,10 +1,6 @@
 {
   "Version": 1,
-<<<<<<< HEAD
   "Hash": "ZGjDy/uommt9xojXgIBaX6qVoCAfM/T1jGwjekFm80k=",
-=======
-  "Hash": "rgH2+Q7dmXvSuDxd4moNjlmKblxDhcTWaxT0meDD1ec=",
->>>>>>> 98dedb94a6900c3d8e2589c8a56bd85090743173
   "Source": "MVCApplication",
   "BasePath": "_content/MVCApplication",
   "Mode": "Default",
@@ -14,17 +10,17 @@
     {
       "Name": "MVCApplication\\wwwroot",
       "Source": "MVCApplication",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "E:\\Lab3CloudApi\\obj\\Debug\\net6.0\\scopedcss\\bundle\\MVCApplication.styles.css",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\obj\\Debug\\net6.0\\scopedcss\\bundle\\MVCApplication.styles.css",
       "SourceId": "MVCApplication",
       "SourceType": "Computed",
-      "ContentRoot": "E:\\Lab3CloudApi\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "MVCApplication.styles.css",
       "AssetKind": "All",
@@ -35,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\Lab3CloudApi\\obj\\Debug\\net6.0\\scopedcss\\bundle\\MVCApplication.styles.css"
+      "OriginalItemSpec": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\obj\\Debug\\net6.0\\scopedcss\\bundle\\MVCApplication.styles.css"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MVCApplication.bundle.scp.css",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MVCApplication.bundle.scp.css",
       "SourceId": "MVCApplication",
       "SourceType": "Computed",
-      "ContentRoot": "E:\\Lab3CloudApi\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "MVCApplication.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\Lab3CloudApi\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MVCApplication.bundle.scp.css"
+      "OriginalItemSpec": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MVCApplication.bundle.scp.css"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\assets\\add_bg.jpg",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\assets\\add_bg.jpg",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "assets/add_bg.jpg",
       "AssetKind": "All",
@@ -72,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\add_bg.jpg"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\assets\\download-solid.svg",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\assets\\download-solid.svg",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "assets/download-solid.svg",
       "AssetKind": "All",
@@ -89,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\download-solid.svg"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\assets\\home_head.jpg",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\assets\\home_head.jpg",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "assets/home_head.jpg",
       "AssetKind": "All",
@@ -106,7 +102,6 @@
       "OriginalItemSpec": "wwwroot\\assets\\home_head.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\assets\\main_img.jpg",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
@@ -125,12 +120,9 @@
     },
     {
       "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\assets\\mov1.jpg",
-=======
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\assets\\mov1.jpg",
->>>>>>> 98dedb94a6900c3d8e2589c8a56bd85090743173
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "assets/mov1.jpg",
       "AssetKind": "All",
@@ -144,7 +136,6 @@
       "OriginalItemSpec": "wwwroot\\assets\\mov1.jpg"
     },
     {
-<<<<<<< HEAD
       "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\assets\\pen-to-square-regular.svg",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
@@ -163,12 +154,9 @@
     },
     {
       "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\assets\\signinbg.jpg",
-=======
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\assets\\signinbg.jpg",
->>>>>>> 98dedb94a6900c3d8e2589c8a56bd85090743173
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "assets/signinbg.jpg",
       "AssetKind": "All",
@@ -182,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\signinbg.jpg"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\assets\\star-solid.svg",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\assets\\star-solid.svg",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "assets/star-solid.svg",
       "AssetKind": "All",
@@ -199,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\star-solid.svg"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\assets\\title_bg.jpg",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\assets\\title_bg.jpg",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "assets/title_bg.jpg",
       "AssetKind": "All",
@@ -216,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\title_bg.jpg"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\css\\site.css",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\css\\site.css",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -233,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\favicon.ico",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\favicon.ico",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -250,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\js\\site.js",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\js\\site.js",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -267,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -284,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -301,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -318,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -335,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -352,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -369,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -386,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -403,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -420,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -437,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -454,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -471,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -488,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -505,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -522,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -539,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -556,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -573,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -590,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -607,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -624,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -641,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -658,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -675,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -692,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -709,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -726,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -743,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -760,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -777,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -794,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -811,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -828,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -845,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -862,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -879,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -896,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -913,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -930,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -947,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -964,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -981,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -998,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1015,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1032,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1049,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1066,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1083,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1100,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1117,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1134,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1151,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1168,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1185,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1202,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1219,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "E:\\Lab3CloudApi\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "MVCApplication",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Lab3CloudApi\\wwwroot\\",
+      "ContentRoot": "E:\\Centennial Software Engineering Technology\\Semester 3\\cloud computing\\Lab3CloudApi\\wwwroot\\",
       "BasePath": "_content/MVCApplication",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

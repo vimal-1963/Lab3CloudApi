@@ -195,7 +195,6 @@ form{
     }
 
     .edit_img {
-        width: 30%;
     }
 
     .edit_img > img {
@@ -218,3 +217,31 @@ form{
         z-index: -100;
         width: 100vw;
     }
+.mov_field {
+    display: flex;
+    color: white;
+    gap: 15%;
+}
+.mov_field >label{
+    width:20%;
+}
+.edit-form-group {
+    display:flex;
+    gap:4%;
+}
+    .edit-form-group > label{
+        width:30%
+    }
+    /*.edit-form-group {
+        width: 5%;
+    }*/
+.comment_edit{
+    display:flex;
+    flex-direction:column;
+    gap:1vh;
+    width:100%;
+}
+
+.edit_btn{
+    margin-top:10%;
+}

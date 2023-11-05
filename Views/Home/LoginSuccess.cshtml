@@ -39,9 +39,15 @@
                             {
                                 @Html.HiddenFor(model => movie.MovieID)
                                 @Html.HiddenFor(model => movie.Title)
+                                @Html.HiddenFor(model => movie.Directors[0])
                                 @Html.HiddenFor(model => movie.Genre)
                                 @Html.HiddenFor(model => movie.Rating)
-                                @Html.HiddenFor(model => movie.MovieImageUrl)
+                                @for (var i = 0; i < movie.Comments.Count; i++)
+                                {
+                                    @Html.HiddenFor(model => movie.Comments[i].Comment)
+                                    @Html.HiddenFor(model => movie.Comments[i].CommentedUser)
+                                    @Html.HiddenFor(model => movie.Comments[i].CommentTime)
+                                }                                   @Html.HiddenFor(model => movie.MovieImageUrl)
                                 @Html.HiddenFor(model => movie.URL)
                                 @Html.HiddenFor(model => movie.UploadedUserId)
                                 @Html.HiddenFor(model => movie.URL)
@@ -78,9 +84,15 @@
                             {
                                 @Html.HiddenFor(model => movie.MovieID)
                                 @Html.HiddenFor(model => movie.Title)
+                                @Html.HiddenFor(model => movie.Directors[0])
                                 @Html.HiddenFor(model => movie.Genre)
                                 @Html.HiddenFor(model => movie.Rating)
-                                @Html.HiddenFor(model => movie.MovieImageUrl)
+                                @for (var i = 0; i < movie.Comments.Count; i++)
+                                {
+                                    @Html.HiddenFor(model => movie.Comments[i].Comment)
+                                    @Html.HiddenFor(model => movie.Comments[i].CommentedUser)
+                                    @Html.HiddenFor(model => movie.Comments[i].CommentTime)
+                                }                                @Html.HiddenFor(model => movie.MovieImageUrl)
                                 @Html.HiddenFor(model => movie.URL)
                                 @Html.HiddenFor(model => movie.UploadedUserId)
                                 @Html.HiddenFor(model => movie.URL)
@@ -117,9 +129,15 @@
                             {
                                 @Html.HiddenFor(model => movie.MovieID)
                                 @Html.HiddenFor(model => movie.Title)
+                                @Html.HiddenFor(model => movie.Directors[0])
                                 @Html.HiddenFor(model => movie.Genre)
                                 @Html.HiddenFor(model => movie.Rating)
-                                @Html.HiddenFor(model => movie.MovieImageUrl)
+                                @for (var i = 0; i < movie.Comments.Count; i++)
+                                {
+                                    @Html.HiddenFor(model => movie.Comments[i].Comment)
+                                    @Html.HiddenFor(model => movie.Comments[i].CommentedUser)
+                                    @Html.HiddenFor(model => movie.Comments[i].CommentTime)
+                                }                                   @Html.HiddenFor(model => movie.MovieImageUrl)
                                 @Html.HiddenFor(model => movie.URL)
                                 @Html.HiddenFor(model => movie.UploadedUserId)
                                 @Html.HiddenFor(model => movie.URL)
@@ -157,9 +175,15 @@
                             {
                                 @Html.HiddenFor(model => movie.MovieID)
                                 @Html.HiddenFor(model => movie.Title)
+                                @Html.HiddenFor(model => movie.Directors)
                                 @Html.HiddenFor(model => movie.Genre)
                                 @Html.HiddenFor(model => movie.Rating)
-                                @Html.HiddenFor(model => movie.MovieImageUrl)
+                                @for (var i = 0; i < movie.Comments.Count; i++)
+                                {
+                                    @Html.HiddenFor(model => movie.Comments[i].Comment)
+                                    @Html.HiddenFor(model => movie.Comments[i].CommentedUser)
+                                    @Html.HiddenFor(model => movie.Comments[i].CommentTime)
+                                }                                   @Html.HiddenFor(model => movie.MovieImageUrl)
                                 @Html.HiddenFor(model => movie.URL)
                                 @Html.HiddenFor(model => movie.UploadedUserId)
                                 @Html.HiddenFor(model => movie.URL)
@@ -200,9 +224,15 @@
                             {
                                 @Html.HiddenFor(model => movie.MovieID)
                                 @Html.HiddenFor(model => movie.Title)
+                                @Html.HiddenFor(model => movie.Directors)
                                 @Html.HiddenFor(model => movie.Genre)
                                 @Html.HiddenFor(model => movie.Rating)
-                                @Html.HiddenFor(model => movie.MovieImageUrl)
+                                @for (var i = 0; i < movie.Comments.Count; i++)
+                                {
+                                    @Html.HiddenFor(model => movie.Comments[i].Comment)
+                                    @Html.HiddenFor(model => movie.Comments[i].CommentedUser)
+                                    @Html.HiddenFor(model => movie.Comments[i].CommentTime)
+                                }                                   @Html.HiddenFor(model => movie.MovieImageUrl)
                                 @Html.HiddenFor(model => movie.URL)
                                 @Html.HiddenFor(model => movie.UploadedUserId)
                                 @Html.HiddenFor(model => movie.URL)
@@ -219,29 +249,7 @@
     </div>
     
   
-    <div class="modal" id="editModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h5 class="modal-title">Edit details</h5>
-                </div>
-
-                <!-- Modal Body -->
-                <div class="modal-body">
-                    <p>Modal content goes here.</p>
-                </div>
-
-                <!-- Modal Footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save Changes</button>
-                </div>
-
-            </div>
-        </div>
-    </div>
+    
 
 </div>
 <a class="add-new text-dark" href="/addMovie">Add New Movie</a>
