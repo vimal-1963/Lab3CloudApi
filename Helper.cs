@@ -1,6 +1,7 @@
 ﻿using Amazon;
 using Amazon.DynamoDBv2;
 using Amazon.S3;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -13,16 +14,21 @@ namespace MVCApplication
 {
     public class Helper
     {
-        public readonly static IAmazonS3 s3Client;
+        public readonly  static IAmazonS3 s3Client;
         public readonly static AmazonDynamoDBClient dynamoDBClient;
-        static Helper()
+        static  Helper()
         {
+
+           
             s3Client = GetS3Client();
             dynamoDBClient = GetDynamoDBClient();
+            
         }
 
-        public static IAmazonS3 GetS3Client()
+        public  static IAmazonS3 GetS3Client()
         {
+           
+
             string accessKey = ConfigurationManager.AppSettings["accessid"];
             string awsSecretKey = ConfigurationManager.AppSettings["password"];
             return new AmazonS3Client(accessKey, awsSecretKey, RegionEndpoint.CACentral1);
@@ -34,5 +40,13 @@ namespace MVCApplication
             string awsSecretKey = ConfigurationManager.AppSettings["password"];
             return new AmazonDynamoDBClient(accessKey, awsSecretKey, RegionEndpoint.CACentral1);
         }
+
+
+        private async static  Task GetAccessId()
+        {
+             await SSMParameter.getAccessId();
+        }
+
+
     }
 }

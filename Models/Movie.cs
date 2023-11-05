@@ -41,7 +41,6 @@ namespace MVCApplication.Models
         {
           
         }
-
         public string Comment { get; set; }
         public string CommentedUser { get; set; }
         public string CommentTime { get; set; }

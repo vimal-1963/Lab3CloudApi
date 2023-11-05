@@ -814,3 +814,6 @@ E:\Lab3CloudApi\obj\Debug\net6.0\refint\MVCApplication.dll
 E:\Lab3CloudApi\obj\Debug\net6.0\MVCApplication.pdb
 E:\Lab3CloudApi\obj\Debug\net6.0\MVCApplication.genruntimeconfig.cache
 E:\Lab3CloudApi\obj\Debug\net6.0\ref\MVCApplication.dll
+E:\Lab3CloudApi\bin\Debug\net6.0\Amazon.AspNetCore.DataProtection.SSM.dll
+E:\Lab3CloudApi\bin\Debug\net6.0\AWSSDK.Extensions.NETCore.Setup.dll
+E:\Lab3CloudApi\bin\Debug\net6.0\AWSSDK.SimpleSystemsManagement.dll

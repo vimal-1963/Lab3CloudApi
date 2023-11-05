@@ -10,6 +10,7 @@
         "dependencies": {
           "AWSSDK.DynamoDBv2": "3.7.203.11",
           "AWSSDK.S3": "3.7.205.21",
+          "Amazon.AspNetCore.DataProtection.SSM": "3.1.1",
           "Microsoft.Data.SqlClient": "5.1.2",
           "Microsoft.EntityFrameworkCore.Design": "7.0.13",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.13",
@@ -18,6 +19,19 @@
         },
         "runtime": {
           "MVCApplication.dll": {}
+        }
+      },
+      "Amazon.AspNetCore.DataProtection.SSM/3.1.1": {
+        "dependencies": {
+          "AWSSDK.Extensions.NETCore.Setup": "3.7.2",
+          "AWSSDK.SimpleSystemsManagement": "3.7.17.46",
+          "Microsoft.AspNetCore.DataProtection.Extensions": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Amazon.AspNetCore.DataProtection.SSM.dll": {
+            "assemblyVersion": "3.1.1.0",
+            "fileVersion": "3.1.1.0"
+          }
         }
       },
       "AWSSDK.Core/3.7.204.10": {
@@ -39,6 +53,20 @@
           }
         }
       },
+      "AWSSDK.Extensions.NETCore.Setup/3.7.2": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.204.10",
+          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.Extensions.NETCore.Setup.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.1.0"
+          }
+        }
+      },
       "AWSSDK.S3/3.7.205.21": {
         "dependencies": {
           "AWSSDK.Core": "3.7.204.10"
@@ -47,6 +75,17 @@
           "lib/netcoreapp3.1/AWSSDK.S3.dll": {
             "assemblyVersion": "3.3.0.0",
             "fileVersion": "3.7.205.21"
+          }
+        }
+      },
+      "AWSSDK.SimpleSystemsManagement/3.7.17.46": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.204.10"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.SimpleSystemsManagement.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.17.46"
           }
         }
       },
@@ -650,6 +689,25 @@
         }
       },
       "MessagePackAnalyzer/2.1.152": {},
+      "Microsoft.AspNetCore.Cryptography.Internal/6.0.0": {},
+      "Microsoft.AspNetCore.DataProtection/6.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.Internal": "6.0.0",
+          "Microsoft.AspNetCore.DataProtection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Hosting.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0",
+          "System.Security.Cryptography.Xml": "6.0.0"
+        }
+      },
+      "Microsoft.AspNetCore.DataProtection.Abstractions/6.0.0": {},
+      "Microsoft.AspNetCore.DataProtection.Extensions/6.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.DataProtection": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        }
+      },
       "Microsoft.AspNetCore.Razor.Language/6.0.0": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll": {
@@ -1329,6 +1387,18 @@
           }
         }
       },
+      "Microsoft.Extensions.FileProviders.Abstractions/6.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "7.0.0"
+        }
+      },
+      "Microsoft.Extensions.Hosting.Abstractions/6.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
+        }
+      },
       "Microsoft.Extensions.Logging/7.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
@@ -1743,7 +1813,7 @@
           "NuGet.Configuration": "6.6.1",
           "NuGet.Versioning": "6.6.1",
           "System.Security.Cryptography.Cng": "5.0.0",
-          "System.Security.Cryptography.Pkcs": "5.0.0"
+          "System.Security.Cryptography.Pkcs": "6.0.0"
         },
         "runtime": {
           "lib/net5.0/NuGet.Packaging.dll": {
@@ -2058,7 +2128,7 @@
           }
         }
       },
-      "System.Formats.Asn1/5.0.0": {},
+      "System.Formats.Asn1/6.0.0": {},
       "System.Globalization/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -2411,7 +2481,7 @@
       },
       "System.Security.Cryptography.Cng/5.0.0": {
         "dependencies": {
-          "System.Formats.Asn1": "5.0.0"
+          "System.Formats.Asn1": "6.0.0"
         }
       },
       "System.Security.Cryptography.Csp/4.3.0": {
@@ -2464,10 +2534,9 @@
           "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
         }
       },
-      "System.Security.Cryptography.Pkcs/5.0.0": {
+      "System.Security.Cryptography.Pkcs/6.0.0": {
         "dependencies": {
-          "System.Formats.Asn1": "5.0.0",
-          "System.Security.Cryptography.Cng": "5.0.0"
+          "System.Formats.Asn1": "6.0.0"
         }
       },
       "System.Security.Cryptography.Primitives/4.3.0": {
@@ -2524,6 +2593,12 @@
           "runtime.native.System": "4.3.0",
           "runtime.native.System.Net.Http": "4.3.0",
           "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
+        }
+      },
+      "System.Security.Cryptography.Xml/6.0.0": {
+        "dependencies": {
+          "System.Security.AccessControl": "6.0.0",
+          "System.Security.Cryptography.Pkcs": "6.0.0"
         }
       },
       "System.Security.Permissions/6.0.0": {
@@ -2679,6 +2754,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Amazon.AspNetCore.DataProtection.SSM/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-T5bHnTVkUzKuoscHw91adq3wPr6kTirEQZCK56sdsKHUxip2EyeQmLxeHgdYhgli8PFrFofezvHHjtcKMuY3Vg==",
+      "path": "amazon.aspnetcore.dataprotection.ssm/3.1.1",
+      "hashPath": "amazon.aspnetcore.dataprotection.ssm.3.1.1.nupkg.sha512"
+    },
     "AWSSDK.Core/3.7.204.10": {
       "type": "package",
       "serviceable": true,
@@ -2693,12 +2775,26 @@
       "path": "awssdk.dynamodbv2/3.7.203.11",
       "hashPath": "awssdk.dynamodbv2.3.7.203.11.nupkg.sha512"
     },
+    "AWSSDK.Extensions.NETCore.Setup/3.7.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iFjbEnVB0f6Hr8L3EfdelHG7zxVQrOmeP9UIrX3IODR1eTsrqVrmq0mazdIr0GZK1YG2/DZiVt6tNyV1bayndw==",
+      "path": "awssdk.extensions.netcore.setup/3.7.2",
+      "hashPath": "awssdk.extensions.netcore.setup.3.7.2.nupkg.sha512"
+    },
     "AWSSDK.S3/3.7.205.21": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-uy37CvVG+m3Ol0bpyd6pZI3tU/Py4DwRSdIunVzHFZaIkN1uwljytrdGj9Aft8MsXSSrm0I6rkWIyjeYLDztRw==",
       "path": "awssdk.s3/3.7.205.21",
       "hashPath": "awssdk.s3.3.7.205.21.nupkg.sha512"
+    },
+    "AWSSDK.SimpleSystemsManagement/3.7.17.46": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sGYOrJ464Bjj19ohR7ps4vqsmEIwyDoQ3MBP0N1zbMrkAQOcWvkQ7MP0ZpEjlkRQpEeEFlH2oei/KG/AZ4POIg==",
+      "path": "awssdk.simplesystemsmanagement/3.7.17.46",
+      "hashPath": "awssdk.simplesystemsmanagement.3.7.17.46.nupkg.sha512"
     },
     "Azure.Core/1.25.0": {
       "type": "package",
@@ -3085,6 +3181,34 @@
       "path": "messagepackanalyzer/2.1.152",
       "hashPath": "messagepackanalyzer.2.1.152.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.Cryptography.Internal/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZWFBiHwkmipr+7t3MEPa7oB/iE8Kf5wvUptn9AXj7P7l/tGHEmRb1606Mlh/e2zkYwfjNGDH4Z5dUUlcnyccIw==",
+      "path": "microsoft.aspnetcore.cryptography.internal/6.0.0",
+      "hashPath": "microsoft.aspnetcore.cryptography.internal.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.DataProtection/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hdRTqG2WLDNwnoWz6J9wi8+BjoXgmKl0fh8us9SgxOlEPU+IPvJxyAAs9KGKezo4F30seHmWxIlCoDoANpmKIQ==",
+      "path": "microsoft.aspnetcore.dataprotection/6.0.0",
+      "hashPath": "microsoft.aspnetcore.dataprotection.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.DataProtection.Abstractions/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Z/UU4NEBm5UgNufJmw+j5baW26ytCOIZ0G7sZocPaOzsUeBon1bkM3lSMNZQG2GmDjAIVP2XMSODf2jzSGbibw==",
+      "path": "microsoft.aspnetcore.dataprotection.abstractions/6.0.0",
+      "hashPath": "microsoft.aspnetcore.dataprotection.abstractions.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.DataProtection.Extensions/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pOz7B1VICm2PNFKOiOrBKZFGLlukyIASmCQgH45bNX93Z3AwL9yAWi0CNzid0sS22/24VWlNcm+QP/Vl41o2RA==",
+      "path": "microsoft.aspnetcore.dataprotection.extensions/6.0.0",
+      "hashPath": "microsoft.aspnetcore.dataprotection.extensions.6.0.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Razor.Language/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3308,6 +3432,20 @@
       "sha512": "sha512-oONNYd71J3LzkWc4fUHl3SvMfiQMYUCo/mDHDEu76hYYxdhdrPYv6fvGv9nnKVyhE9P0h20AU8RZB5OOWQcAXg==",
       "path": "microsoft.extensions.dependencymodel/7.0.0",
       "hashPath": "microsoft.extensions.dependencymodel.7.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0pd4/fho0gC12rQswaGQxbU34jOS1TPS8lZPpkFCH68ppQjHNHYle9iRuHeev1LhrJ94YPvzcRd8UmIuFk23Qw==",
+      "path": "microsoft.extensions.fileproviders.abstractions/6.0.0",
+      "hashPath": "microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Hosting.Abstractions/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GcT5l2CYXL6Sa27KCSh0TixsRfADUgth+ojQSD5EkzisZxmGFh7CwzkcYuGwvmXLjr27uWRNrJ2vuuEjMhU05Q==",
+      "path": "microsoft.extensions.hosting.abstractions/6.0.0",
+      "hashPath": "microsoft.extensions.hosting.abstractions.6.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Logging/7.0.0": {
       "type": "package",
@@ -3820,12 +3958,12 @@
       "path": "system.drawing.common/6.0.0",
       "hashPath": "system.drawing.common.6.0.0.nupkg.sha512"
     },
-    "System.Formats.Asn1/5.0.0": {
+    "System.Formats.Asn1/6.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-MTvUIktmemNB+El0Fgw9egyqT9AYSIk6DTJeoDSpc3GIHxHCMo8COqkWT1mptX5tZ1SlQ6HJZ0OsSvMth1c12w==",
-      "path": "system.formats.asn1/5.0.0",
-      "hashPath": "system.formats.asn1.5.0.0.nupkg.sha512"
+      "sha512": "sha512-T6fD00dQ3NTbPDy31m4eQUwKW84s03z0N2C8HpOklyeaDgaJPa/TexP4/SkORMSOwc7WhKifnA6Ya33AkzmafA==",
+      "path": "system.formats.asn1/6.0.0",
+      "hashPath": "system.formats.asn1.6.0.0.nupkg.sha512"
     },
     "System.Globalization/4.3.0": {
       "type": "package",
@@ -4128,12 +4266,12 @@
       "path": "system.security.cryptography.openssl/4.3.0",
       "hashPath": "system.security.cryptography.openssl.4.3.0.nupkg.sha512"
     },
-    "System.Security.Cryptography.Pkcs/5.0.0": {
+    "System.Security.Cryptography.Pkcs/6.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-9TPLGjBCGKmNvG8pjwPeuYy0SMVmGZRwlTZvyPHDbYv/DRkoeumJdfumaaDNQzVGMEmbWtg07zUpSW9q70IlDQ==",
-      "path": "system.security.cryptography.pkcs/5.0.0",
-      "hashPath": "system.security.cryptography.pkcs.5.0.0.nupkg.sha512"
+      "sha512": "sha512-elM3x+xSRhzQysiqo85SbidJJ2YbZlnvmh+53TuSZHsD7dNuuEWser+9EFtY+rYupBwkq2avc6ZCO3/6qACgmg==",
+      "path": "system.security.cryptography.pkcs/6.0.0",
+      "hashPath": "system.security.cryptography.pkcs.6.0.0.nupkg.sha512"
     },
     "System.Security.Cryptography.Primitives/4.3.0": {
       "type": "package",
@@ -4155,6 +4293,13 @@
       "sha512": "sha512-t2Tmu6Y2NtJ2um0RtcuhP7ZdNNxXEgUm2JeoA/0NvlMjAhKCnM1NX07TDl3244mVp3QU6LPEhT3HTtH1uF7IYw==",
       "path": "system.security.cryptography.x509certificates/4.3.0",
       "hashPath": "system.security.cryptography.x509certificates.4.3.0.nupkg.sha512"
+    },
+    "System.Security.Cryptography.Xml/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-puJ4UCh9JVRwOCyCIcq71JY6Axr8Sp8E2GjTIU1Fj8hm4+oX6NEoyGFGa/+pBG8SrVxbQPSj7hvtaREyTHHsmw==",
+      "path": "system.security.cryptography.xml/6.0.0",
+      "hashPath": "system.security.cryptography.xml.6.0.0.nupkg.sha512"
     },
     "System.Security.Permissions/6.0.0": {
       "type": "package",
