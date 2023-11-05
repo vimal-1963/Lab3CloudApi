@@ -38,7 +38,7 @@ namespace MVCApplication.Controllers
             movieEntity.URL = movieUrl;
             movieEntity.MovieImageUrl = thumnailUrl;
             movieEntity.Genre = movie.Genre;
-            movieEntity.Rating = movie.Rating;
+            movieEntity.Rating = float.Parse(movie.Rating); ;
             movieEntity.Directors = directors;
             movieEntity.Comments = comments;
             var userId = HttpContext.Request.Cookies["userId"];

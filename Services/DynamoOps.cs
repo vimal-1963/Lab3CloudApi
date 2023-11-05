@@ -2,6 +2,7 @@
 using Amazon.DynamoDBv2.DataModel;
 using Amazon.DynamoDBv2.DocumentModel;
 using Amazon.DynamoDBv2.Model;
+using Humanizer.Localisation;
 using Microsoft.EntityFrameworkCore;
 using MVCApplication.Models;
 
@@ -35,6 +36,32 @@ namespace MVCApplication.Services
                 movies.Add(movie);
             }
 
+            return movies;
+        }
+
+        public async Task<List<Movie>> GetMoviesByRatingAsync()
+        {
+            var context = new DynamoDBContext(client);
+            var scanRequest = new ScanRequest
+            {
+                TableName = "Movies",
+                FilterExpression = "MovieRating > :rating",
+                ExpressionAttributeValues = new Dictionary<string, AttributeValue>
+    {
+        { ":rating", new AttributeValue { N = "9" } }
+    }
+            };
+
+            var scanResponse = await client.ScanAsync(scanRequest);
+
+            var movies = new List<Movie>();
+            foreach (var item in scanResponse.Items)
+            {
+                var movie = context.FromDocument<Movie>(Document.FromAttributeMap(item));
+                movies.Add(movie);
+            }
+            // Sort the movies by MovieRating in ascending order
+            movies = movies.OrderByDescending(m => m.Rating).ToList();
             return movies;
         }
 

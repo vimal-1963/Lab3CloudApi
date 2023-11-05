@@ -4,172 +4,244 @@
 @{
 }
 @model MVCApplication.Models.MovieHomeViewModel
-
+@{
+    var modalData = "";
+}
 <div class="home-bg-overlay">
 </div>
 <div class="movie-home-conatiner">
     <div class="text-center home_heading">
-        <h1 class="display-4">Welcome to MovieSpace</h1>
+        <p class="display-4 neonText">Welcome to MovieSpace</p>
     </div>
-    <div class="movie-content">
-        <p class="heading">Sci-Fi</p>
-        <div class="movie-item-container">
-            @foreach (var movie in Model.SciFiMovies)
-            {
-                <div class="movie-item">
-                    <div class="movie-img">
-                        <img src="@movie.MovieImageUrl" />
-                    </div>
-                    <div class="movie-card-detail">
-                        <div class="rate_icon_div">
-                            <div class="rating_div">
-                                <img class="rating_dwnld_img" src="~/assets/star-solid.svg" />
-                                <p class="rating_value">@movie.Rating</p>
-                            </div>
-                            <a href="@movie.URL" download>
-                                <img class="rating_dwnld_img" src="~/assets/download-solid.svg" alt="Download">
-                            </a>
+    <img class="main_img" src="~/assets/main_img.jpg" />
+    <div class="movie-content-container">
+        <div class="movie-content">
+            <p class="heading">Top-Rated</p>
+            <div class="movie-item-container">
+                @foreach (var movie in Model.TopRatedMovies)
+                {
+                    <div class="movie-item">
+                        <div class="movie-img">
+                            <img src="@movie.MovieImageUrl" />
                         </div>
-                        <p>@movie.Title</p>
-                        @using (Html.BeginForm("EditMovie", "Movie", FormMethod.Post))
-                        {
-                            @Html.HiddenFor(model => movie.MovieID)
-                            @Html.HiddenFor(model => movie.Title)
-                            @Html.HiddenFor(model => movie.Genre)
-                            @Html.HiddenFor(model => movie.Rating)
-                            @Html.HiddenFor(model => movie.MovieImageUrl)
-                            @Html.HiddenFor(model => movie.URL)
-                            @Html.HiddenFor(model => movie.UploadedUserId)
-                            @Html.HiddenFor(model => movie.URL)
-                            @Html.HiddenFor(model => movie.UploadedUserId)
-                            // This includes all the model properties as hidden fields
-                            <button class="movie_edit_btn" type="submit">Edit</button>
-                        }
+                        <div class="movie-card-detail">
+                            <div class="rate_icon_div">
+                                <div class="rating_div">
+                                    <img class="rating_dwnld_img" src="~/assets/star-solid.svg" />
+                                    <p class="rating_value">@movie.Rating</p>
+                                </div>
+                                <a href="@movie.URL" download>
+                                    <img class="rating_dwnld_img" src="~/assets/download-solid.svg" alt="Download">
+                                </a>
+                            </div>
+                            <p>@movie.Title</p>
+                            @using (Html.BeginForm("EditMovie", "Movie", FormMethod.Post))
+                            {
+                                @Html.HiddenFor(model => movie.MovieID)
+                                @Html.HiddenFor(model => movie.Title)
+                                @Html.HiddenFor(model => movie.Genre)
+                                @Html.HiddenFor(model => movie.Rating)
+                                @Html.HiddenFor(model => movie.MovieImageUrl)
+                                @Html.HiddenFor(model => movie.URL)
+                                @Html.HiddenFor(model => movie.UploadedUserId)
+                                @Html.HiddenFor(model => movie.URL)
+                                @Html.HiddenFor(model => movie.UploadedUserId)
+                                // This includes all the model properties as hidden fields
+                                <button class="movie_edit_btn" type="submit">Edit</button>
+                            }
+                        </div>
                     </div>
-                </div>
-            }
+                }
+            </div>
         </div>
-    </div>
-    <div class="movie-content">
-        <p class="heading">Action</p>
-        <div class="movie-item-container">
-            @foreach (var movie in Model.ActionMovies)
-            {
-                <div class="movie-item">
-                    <div class="movie-img">
-                        <img src="@movie.MovieImageUrl" />
-                    </div>
-                    <div class="movie-card-detail">
-                        <div class="rate_icon_div">
-                            <div class="rating_div">
-                                <img class="rating_dwnld_img" src="~/assets/star-solid.svg" />
-                                <p class="rating_value">@movie.Rating</p>
-                            </div>
-                            <a href="@movie.URL" download>
-                                <img class="rating_dwnld_img" src="~/assets/download-solid.svg" alt="Download">
-                            </a>
+        <div class="movie-content">
+            <p class="heading">Sci-Fi</p>
+            <div class="movie-item-container">
+                @foreach (var movie in Model.SciFiMovies)
+                {
+                    <div class="movie-item">
+                        <div class="movie-img">
+                            <img src="@movie.MovieImageUrl" />
                         </div>
-                        <p>@movie.Title</p>
-                        @using (Html.BeginForm("EditMovie", "Movie", FormMethod.Post))
-                        {
-                            @Html.HiddenFor(model => movie.MovieID)
-                            @Html.HiddenFor(model => movie.Title)
-                            @Html.HiddenFor(model => movie.Genre)
-                            @Html.HiddenFor(model => movie.Rating)
-                            @Html.HiddenFor(model => movie.MovieImageUrl)
-                            @Html.HiddenFor(model => movie.URL)
-                            @Html.HiddenFor(model => movie.UploadedUserId)
-                            @Html.HiddenFor(model => movie.URL)
-                            @Html.HiddenFor(model => movie.UploadedUserId)
-                            // This includes all the model properties as hidden fields
-                            <button class="movie_edit_btn" type="submit">Edit</button>
-                        }
-
+                        <div class="movie-card-detail">
+                            <div class="rate_icon_div">
+                                <div class="rating_div">
+                                    <img class="rating_dwnld_img" src="~/assets/star-solid.svg" />
+                                    <p class="rating_value">@movie.Rating</p>
+                                </div>
+                                <a href="@movie.URL" download>
+                                    <img class="rating_dwnld_img" src="~/assets/download-solid.svg" alt="Download">
+                                </a>
+                            </div>
+                            <p>@movie.Title</p>
+                            @using (Html.BeginForm("EditMovie", "Movie", FormMethod.Post))
+                            {
+                                @Html.HiddenFor(model => movie.MovieID)
+                                @Html.HiddenFor(model => movie.Title)
+                                @Html.HiddenFor(model => movie.Genre)
+                                @Html.HiddenFor(model => movie.Rating)
+                                @Html.HiddenFor(model => movie.MovieImageUrl)
+                                @Html.HiddenFor(model => movie.URL)
+                                @Html.HiddenFor(model => movie.UploadedUserId)
+                                @Html.HiddenFor(model => movie.URL)
+                                @Html.HiddenFor(model => movie.UploadedUserId)
+                                // This includes all the model properties as hidden fields
+                                <button class="movie_edit_btn" type="submit">Edit</button>
+                            }
+                        </div>
                     </div>
-                </div>
-            }
+                }
+            </div>
         </div>
-    </div>
-    <div class="movie-content">
-        <p class="heading">Horror</p>
-        <div class="movie-item-container">
-            @foreach (var movie in Model.HorrorMovies)
-            {
-                <div class="movie-item">
-                    <div class="movie-img">
-                        <img src="@movie.MovieImageUrl" />
-                    </div>
-                    <div class="movie-card-detail">
-                        <div class="rate_icon_div">
-                            <div class="rating_div">
-                                <img class="rating_dwnld_img" src="~/assets/star-solid.svg" />
-                                <p class="rating_value">@movie.Rating</p>
-                            </div>
-                            <a href="@movie.URL" download>
-                                <img class="rating_dwnld_img" src="~/assets/download-solid.svg" alt="Download">
-                            </a>
+        <div class="movie-content">
+            <p class="heading">Action</p>
+            <div class="movie-item-container">
+                @foreach (var movie in Model.ActionMovies)
+                {
+                    <div class="movie-item">
+                        <div class="movie-img">
+                            <img src="@movie.MovieImageUrl" />
                         </div>
-                        <p>@movie.Title</p>
-                        @using (Html.BeginForm("EditMovie", "Movie", FormMethod.Post))
-                        {
-                            @Html.HiddenFor(model => movie.MovieID)
-                            @Html.HiddenFor(model => movie.Title)
-                            @Html.HiddenFor(model => movie.Genre)
-                            @Html.HiddenFor(model => movie.Rating)
-                            @Html.HiddenFor(model => movie.MovieImageUrl)
-                            @Html.HiddenFor(model => movie.URL)
-                            @Html.HiddenFor(model => movie.UploadedUserId)
-                            @Html.HiddenFor(model => movie.URL)
-                            @Html.HiddenFor(model => movie.UploadedUserId)
-                            // This includes all the model properties as hidden fields
-                            <button class="movie_edit_btn" type="submit">Edit</button>
-                        }
+                        <div class="movie-card-detail">
+                            <div class="rate_icon_div">
+                                <div class="rating_div">
+                                    <img class="rating_dwnld_img" src="~/assets/star-solid.svg" />
+                                    <p class="rating_value">@movie.Rating</p>
+                                </div>
+                                <a href="@movie.URL" download>
+                                    <img class="rating_dwnld_img" src="~/assets/download-solid.svg" alt="Download">
+                                </a>
+                            </div>
+                            <p>@movie.Title</p>
+                            @using (Html.BeginForm("EditMovie", "Movie", FormMethod.Post))
+                            {
+                                @Html.HiddenFor(model => movie.MovieID)
+                                @Html.HiddenFor(model => movie.Title)
+                                @Html.HiddenFor(model => movie.Genre)
+                                @Html.HiddenFor(model => movie.Rating)
+                                @Html.HiddenFor(model => movie.MovieImageUrl)
+                                @Html.HiddenFor(model => movie.URL)
+                                @Html.HiddenFor(model => movie.UploadedUserId)
+                                @Html.HiddenFor(model => movie.URL)
+                                @Html.HiddenFor(model => movie.UploadedUserId)
+                                // This includes all the model properties as hidden fields
+                                <button class="movie_edit_btn" type="submit">Edit</button>
+                            }
 
+                        </div>
                     </div>
-                </div>
-            }
+                }
+            </div>
         </div>
-    </div>
-    <div class="movie-content">
-        <p class="heading">Comedy</p>
-        <div class="movie-item-container">
-            @foreach (var movie in Model.ComedyMovies)
-            {
-                <div class="movie-item">
-                    <div class="movie-img">
-                        <img  src="@movie.MovieImageUrl" />
-                    </div>
-                    <div class="movie-card-detail">
-                        <div class="rate_icon_div">
-                            <div class="rating_div">
-                                <img class="rating_dwnld_img" src="~/assets/star-solid.svg" />
-                                <p class="rating_value">@movie.Rating</p>
-                            </div>
-                            <a href="@movie.URL" download>
-                                <img class="rating_dwnld_img" src="~/assets/download-solid.svg" alt="Download">
-                            </a>
+        <div class="movie-content">
+            <p class="heading">Horror</p>
+            <div class="movie-item-container">
+                @foreach (var movie in Model.HorrorMovies)
+                {
+                    <div class="movie-item">
+                        <div class="movie-img">
+                            <img src="@movie.MovieImageUrl" />
                         </div>
-                        <p>@movie.Title</p>
-                        @using (Html.BeginForm("EditMovie", "Movie", FormMethod.Post))
-                        {
-                            @Html.HiddenFor(model => movie.MovieID)
-                            @Html.HiddenFor(model => movie.Title)
-                            @Html.HiddenFor(model => movie.Genre)
-                            @Html.HiddenFor(model => movie.Rating)
-                            @Html.HiddenFor(model => movie.MovieImageUrl)
-                            @Html.HiddenFor(model => movie.URL)
-                            @Html.HiddenFor(model => movie.UploadedUserId)
-                            @Html.HiddenFor(model => movie.URL)
-                            @Html.HiddenFor(model => movie.UploadedUserId)
-                            // This includes all the model properties as hidden fields
-                            <button class="movie_edit_btn" type="submit">Edit</button>
-                        }
+                        <div class="movie-card-detail">
+                            <div class="rate_icon_div">
+                                <div class="rating_div">
+                                    <img class="rating_dwnld_img" src="~/assets/star-solid.svg" />
+                                    <p class="rating_value">@movie.Rating</p>
+                                </div>
+                                <a href="@movie.URL" download>
+                                    <img class="rating_dwnld_img" src="~/assets/download-solid.svg" alt="Download">
+                                </a>
+                            </div>
+                            <p>@movie.Title</p>
+                            @using (Html.BeginForm("EditMovie", "Movie", FormMethod.Post))
+                            {
+                                @Html.HiddenFor(model => movie.MovieID)
+                                @Html.HiddenFor(model => movie.Title)
+                                @Html.HiddenFor(model => movie.Genre)
+                                @Html.HiddenFor(model => movie.Rating)
+                                @Html.HiddenFor(model => movie.MovieImageUrl)
+                                @Html.HiddenFor(model => movie.URL)
+                                @Html.HiddenFor(model => movie.UploadedUserId)
+                                @Html.HiddenFor(model => movie.URL)
+                                @Html.HiddenFor(model => movie.UploadedUserId)
+                                // This includes all the model properties as hidden fields
+                                <button class="movie_edit_btn" type="submit">Edit</button>
+                            }
 
+                        </div>
                     </div>
-                </div>
-            }
+                }
+            </div>
+        </div>
+        <div class="movie-content">
+            <p class="heading">Comedy</p>
+            <div class="movie-item-container">
+                @foreach (var movie in Model.ComedyMovies)
+                {
+                    <div class="movie-item">
+                        <div class="movie-img">
+                            <img src="@movie.MovieImageUrl" />
+                        </div>
+                        <div class="movie-card-detail">
+                            <div class="rate_icon_div">
+                                <div class="rating_div">
+                                    <img class="rating_dwnld_img" src="~/assets/star-solid.svg" />
+                                    <p class="rating_value">@movie.Rating</p>
+                                </div>
+                                <a data-toggle="modal" data-target="#editModal">
+                                    <img class="rating_dwnld_img" src="~/assets/pen-to-square-regular.svg" alt="Download">
+                                </a>
+                                <a href="@movie.URL" download>
+                                    <img class="rating_dwnld_img" src="~/assets/download-solid.svg" alt="Download">
+                                </a>
+                            </div>
+                            <p>@movie.Title</p>
+                            @using (Html.BeginForm("EditMovie", "Movie", FormMethod.Post))
+                            {
+                                @Html.HiddenFor(model => movie.MovieID)
+                                @Html.HiddenFor(model => movie.Title)
+                                @Html.HiddenFor(model => movie.Genre)
+                                @Html.HiddenFor(model => movie.Rating)
+                                @Html.HiddenFor(model => movie.MovieImageUrl)
+                                @Html.HiddenFor(model => movie.URL)
+                                @Html.HiddenFor(model => movie.UploadedUserId)
+                                @Html.HiddenFor(model => movie.URL)
+                                @Html.HiddenFor(model => movie.UploadedUserId)
+                                // This includes all the model properties as hidden fields
+                                <button class="movie_edit_btn" type="submit">Edit</button>
+                            }
+
+                        </div>
+                    </div>
+                }
+            </div>
         </div>
     </div>
     
+  
+    <div class="modal" id="editModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title">Edit details</h5>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <p>Modal content goes here.</p>
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save Changes</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </div>
 <a class="add-new text-dark" href="/addMovie">Add New Movie</a>

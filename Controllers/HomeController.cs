@@ -47,7 +47,7 @@ namespace MVCApplication.Controllers
             {
                 var viewModel = new MovieHomeViewModel
                 {
-                    //TopRatedMovies = await dynamoOps.GetMoviesByGenreAsync(),
+                    TopRatedMovies = await dynamoOps.GetMoviesByRatingAsync(),
                     SciFiMovies = await dynamoOps.GetMoviesByGenreAsync("Sci-Fi"),
                     ActionMovies = await dynamoOps.GetMoviesByGenreAsync("Action"),
                     ComedyMovies = await dynamoOps.GetMoviesByGenreAsync("Comedy"),
@@ -84,7 +84,7 @@ namespace MVCApplication.Controllers
 
                     var viewModel = new MovieHomeViewModel
                     {
-                        //TopRatedMovies = await dynamoOps.GetMoviesByGenreAsync(),
+                        TopRatedMovies = await dynamoOps.GetMoviesByRatingAsync(),
                         SciFiMovies = await dynamoOps.GetMoviesByGenreAsync("Sci-Fi"),
                         ActionMovies = await dynamoOps.GetMoviesByGenreAsync("Action"),
                         ComedyMovies = await dynamoOps.GetMoviesByGenreAsync("Comedy"),
