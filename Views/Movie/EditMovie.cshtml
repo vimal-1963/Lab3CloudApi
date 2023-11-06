@@ -85,8 +85,9 @@
 
                 <!-- Modal Body -->
                 <div class="modal-body text-light">
-                    <form action="update" method="post">
-                       
+                    <form action="UpdateMovie" method="post">
+                        <input type="hidden" name="MovieID" value="@Model.MovieID" />
+
                         <div class="edit-form-group">
                             <label>Movie Name:</label>
                             <input name="Title" type="text" class="form-control" value="@Model.Title" placeholder="Enter Movie Name"
@@ -98,7 +99,7 @@
                         </div>
                         <div class="edit-form-group">
                             <label>Directors:</label>
-                            <input name="directorName" type="text" class="form-control" value="@if (Model.Directors != null)
+                            <input name="Directors" type="text" class="form-control" value="@if (Model.Directors != null)
                                    {
                                    @foreach (var Director in Model.Directors)
                                    {
@@ -131,7 +132,7 @@
                         </div>
                         <div class="edit-form-group">
                             <label>Rating:</label>
-                            <input name="Rating" type="number" class="form-control" value="@Model.Rating" placeholder="Enter Rating out of 10" min="0" max="10" @if ((string)ViewData["UserIdCookie"] != (string)ViewData["loginuser"])
+                            <input name="Rating" type="text" class="form-control" value="@Model.Rating" placeholder="Enter Rating out of 10" min="0" max="10" @if ((string)ViewData["UserIdCookie"] != (string)ViewData["loginuser"])
                             {
                                 <text>disabled style="background-color:grey !important"</text>
                             }>
@@ -146,13 +147,14 @@
                                     {
                                         @if (@comment.Comment != null && @comment.CommentTime != null)
                                         {
-                                                <input name="Comment" type="text" class="form-control" value="@comment.Comment.ToString()" placeholder="Enter Comment">
+                                            <input name="Comments" type="text" class="form-control" value="@comment.Comment.ToString()" placeholder="Enter Comment">
                                         }
                                     }
                             }
-                            <input name="Comment" type="text" class="form-control" placeholder="Enter Comment">
+                                <input name="Comments" type="text" class="form-control" placeholder="Enter Comment">
                             </div>
                         </div>
+                       
 
                         <button type="submit" class="btn btn-primary">Update</button>
                     </form>

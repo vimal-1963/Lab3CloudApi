@@ -133,8 +133,28 @@ namespace MVCApplication.Services
             }
             return commentList;
 
-
         }
+
+
+        internal async  Task<Movie> getMovieById(string movieIdArg)
+        {
+            var context = new DynamoDBContext(client);
+            var movie = await context.LoadAsync<Movie>(movieIdArg);
+            
+            if (movie != null)
+            {
+
+                Console.WriteLine($"Movie ID: {movie.MovieID}");
+                Console.WriteLine($"Movie Title: {movie.Title}");
+                return movie;
+            }
+
+            else
+            {
+                return null;
+            }
+
+        } 
 
     }
 }

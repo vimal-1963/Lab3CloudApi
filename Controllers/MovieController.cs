@@ -29,7 +29,7 @@ namespace MVCApplication.Controllers
             String movieUrl = await s3Ops.saveFiles(movie.Video);
 
             List<String> directors = new List<String>();
-            directors.Add("jbj");
+            directors.Add(movie.DirectorName);
             MovieComment movieComment = new MovieComment();
             List<MovieComment> comments = new List<MovieComment>();
             comments.Add(movieComment);
@@ -92,6 +92,57 @@ namespace MVCApplication.Controllers
             return Redirect("/Signin");
         }
 
+        [HttpPost]
+        public async Task<IActionResult> UpdateMovie(MovieUpdate movie)
+        {
+            
+            Movie movieObjReceived = await dynamoOps.getMovieById(movie.MovieID.ToString());
+
+
+           // movieObjReceived.MovieID = movie.MovieID;
+           if(movie.Title != null)
+            {
+                movieObjReceived.Title = movie.Title.ToString();
+
+            }
+           if(movie.Directors != null)
+            {
+                movieObjReceived.Directors.Clear();
+                foreach (var director in movie.Directors)
+                {
+                    movieObjReceived.Directors.Add(director);
+                }
+            }
+            if(movie.Genre !=null) {
+                movieObjReceived.Genre = movie.Genre.ToString();
+
+            }
+            if (movie.Rating != null && movie.Rating != 0)
+            {
+                movieObjReceived.Rating = (float)movie.Rating;
+            }
+            if(movie.Comments != null)
+            {
+                List<MovieComment> comments = new List<MovieComment>();
+                foreach (var cmnt in movie.Comments)
+                {
+                    MovieComment comment = new();
+                    comment.Comment = cmnt;
+                    comment.CommentedUser = movieObjReceived.UploadedUserId;
+                    comment.CommentTime = "";
+                    movieObjReceived.Comments.Add(comment);
+                }
+            }
+         
+
+            
+
+
+            await dynamoOps.SaveNewMovie(movieObjReceived);
+
+
+            return Redirect("/Signin");
+        }
 
 
     }
